@@ -109,3 +109,8 @@ kk-scheduler uses Postgres as default storage engine, but any storage engine tha
 ### Improve readme doc and code comments
 
 ### Web UI improvements
+
+# TODO
+
+- [ ] support authentication
+- [ ] record operation for events(update/trigger)
