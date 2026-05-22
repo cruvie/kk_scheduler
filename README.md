@@ -48,7 +48,7 @@ graph TB
 
     subgraph Storage Layer
         J[Store Interface]
-        I[Default Etcd Store]
+        I[Default Postgres Store]
     end
 
     U -- Get/Put/Enable/Trigger Job/Service --> C
