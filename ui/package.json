@@ -12,7 +12,8 @@
     "install check-updates": "npm install -g npm-check-updates",
     "check-updates": "npm-check-updates",
     "update package.json deps": "ncu -u",
-    "cache clean": " npm cache clear --force"
+    "cache clean": " npm cache clear --force",
+    "skill":"npx skills add nuxt/ui --global"
   },
   "dependencies": {
     "nuxt": "^4.4.5",
