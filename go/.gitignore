@@ -1,0 +1,7 @@
+.idea
+.fleet
+.vscode
+**/.DS_Store
+kk-scheduler.iml
+**/logs/
+vendor

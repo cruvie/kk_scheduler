@@ -1,0 +1,30 @@
+# Learn more: https://buf.build/docs/configuration/v2/buf-gen-yaml
+# plugins https://buf.build/protocolbuffers
+version: v2
+inputs:
+  # Local module at provided directory path
+  - directory: ./
+    paths:
+      - kk_scheduler
+plugins:
+  - remote: buf.build/protocolbuffers/go
+    out: .
+    opt:
+      - paths=source_relative
+      #      - default_api_level=API_OPEN
+#      - default_api_level=API_HYBRID
+      - default_api_level=API_OPAQUE #等go dart 支持edition 2024
+  - remote: buf.build/grpc/go
+    out: .
+    opt:
+      - paths=source_relative
+#  - remote: buf.build/connectrpc/go
+#    out: .
+#    opt:
+#      - paths=source_relative
+#      - package_suffix #https://github.com/connectrpc/connect-go/discussions/310
+  - remote: buf.build/bufbuild/es
+    opt: target=ts
+    include_imports: true
+    include_wkt: true
+    out: ../ui/gen
