@@ -1,7 +1,6 @@
 package query
 
 import (
-	"context"
 	"os"
 	"testing"
 
@@ -29,8 +28,7 @@ var pg = &kk_pg.Config{DSN: kk_pg.PostgresDSN{
 
 func TestGen(t *testing.T) {
 	kk_env.SetEnv(kk_env.Env(os.Getenv("KK_Schedule")))
-	stage := kk_stage.NewStage(context.Background(), "test")
-	kk_pg.GenQuery(stage, pg,
+	kk_pg.GenQuery(
 		models.TaskExecution{},
 		models.Job{},
 		models.Service{},
