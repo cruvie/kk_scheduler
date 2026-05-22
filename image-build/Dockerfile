@@ -11,7 +11,7 @@ COPY . /kk-scheduler
 
 WORKDIR /kk-scheduler
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o /kk-scheduler/output /kk-scheduler/internal/main
+RUN CGO_ENABLED=0 GOOS=linux go build -o /kk-scheduler/output /kk-scheduler/go/internal/main
 
 ##
 ## Deploy
