@@ -84,13 +84,13 @@ go get github.com/cruvie/kk-scheduler/go@latest
 
 Run a gRPC server that implements `kk_scheduler.UnimplementedKKScheduleTriggerServer`
 
-See [client_server_test.go](https://github.com/cruvie/kk-scheduler/go/blob/main/internal/schedule_test/client_server_test.go)
+See [client_server_test.go](https://github.com/cruvie/kk-scheduler/blob/main/go/internal/scheduler_test/client_server_test.go)
 
 ### 3. Register service and job
 
 Put a service and job into kk-scheduler, then enable the job.
 
-See [readme_test.go](https://github.com/cruvie/kk-scheduler/go/blob/main/internal/schedule_test/readme_test.go)
+See [readme_test.go](https://github.com/cruvie/kk-scheduler/blob/main/go/internal/scheduler_test/readme_test.go)
 
 ## Contribute
 
@@ -100,11 +100,11 @@ Any test case PR is welcome.
 
 ### Support more storage engines
 
-kk-scheduler uses Postgres as default storage engine, but any storage engine that implements [StoreDriver](https://github.com/cruvie/kk-scheduler/go/blob/main/internal/store_driver/driver.go) can be used.
+kk-scheduler uses Postgres as default storage engine, but any storage engine that implements [StoreDriver](https://github.com/cruvie/kk-scheduler/blob/main/go/internal/store_driver/driver.go) can be used.
 
-1. Create a `store_xxxx.go` in `internal/store_driver/` like [postgres.go](https://github.com/cruvie/kk-scheduler/go/blob/main/internal/store_driver/postgres.go)
-2. Register it in `NewStoreDriver()` in [driver.go](https://github.com/cruvie/kk-scheduler/go/blob/main/internal/store_driver/driver.go)
-3. Add config field in [config.go](https://github.com/cruvie/kk-scheduler/go/blob/main/internal/g_config/config.go) and [config.toml](https://github.com/cruvie/kk-scheduler/go/blob/main/config.toml)
+1. Create a `store_xxxx.go` in `internal/store_driver/` like [postgres.go](https://github.com/cruvie/kk-scheduler/blob/main/go/internal/store_driver/postgres.go)
+2. Register it in `NewStoreDriver()` in [driver.go](https://github.com/cruvie/kk-scheduler/blob/main/go/internal/store_driver/driver.go)
+3. Add config field in [config.go](https://github.com/cruvie/kk-scheduler/blob/main/go/internal/g_config/config.go) and [config.toml](https://github.com/cruvie/kk-scheduler/blob/main/go/config.toml)
 
 ### Improve readme doc and code comments
 
