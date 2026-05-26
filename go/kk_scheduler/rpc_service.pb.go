@@ -66,7 +66,7 @@ func (b0 Trigger_builder) Build() *Trigger {
 type Trigger_Input struct {
 	state                  protoimpl.MessageState `protogen:"opaque.v1"`
 	xxx_hidden_FuncName    *string                `protobuf:"bytes,1,opt,name=funcName"`
-	xxx_hidden_JobId       *string                `protobuf:"bytes,2,opt,name=jobId"`
+	xxx_hidden_JobId       *string                `protobuf:"bytes,2,opt,name=JobId"`
 	XXX_raceDetectHookData protoimpl.RaceDetectHookData
 	XXX_presence           [1]uint32
 	unknownFields          protoimpl.UnknownFields
@@ -225,7 +225,7 @@ const file_kk_scheduler_rpc_service_proto_rawDesc = "" +
 	"\aTrigger\x1a@\n" +
 	"\x05Input\x12\x1a\n" +
 	"\bfuncName\x18\x01 \x01(\tR\bfuncName\x12\x1b\n" +
-	"\x05jobId\x18\x02 \x01(\tB\x05\xca>\x02\x01\x02R\x05jobId\x1a\b\n" +
+	"\x05JobId\x18\x02 \x01(\tB\x05\xca>\x02\x01\x02R\x05JobId\x1a\b\n" +
 	"\x06Output2\xdc\v\n" +
 	"\n" +
 	"KKSchedule\x12D\n" +

@@ -13,7 +13,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file kk_scheduler/TaskExecution.proto.
  */
 export const file_kk_scheduler_TaskExecution: GenFile = /*@__PURE__*/
-  fileDesc("CiBra19zY2hlZHVsZXIvVGFza0V4ZWN1dGlvbi5wcm90bxIMa2tfc2NoZWR1bGVyIssBCg9QQlRhc2tFeGVjdXRpb24SCgoCSWQYASABKAkSDQoFSm9iSWQYAiABKAkSMQoGU3RhdHVzGAMgASgOMiEua2tfc2NoZWR1bGVyLlRhc2tFeGVjdXRpb25TdGF0dXMSLQoJU3RhcnRlZEF0GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgpGaW5pc2hlZEF0GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBILCgNMb2cYBiABKAkiSAoKVGFza0NyZWF0ZRowCgVJbnB1dBIRCgJpZBgBIAEoCUIFyj4CAQISFAoFam9iSWQYAiABKAlCBco+AgECGggKBk91dHB1dCJxChBUYXNrVXBkYXRlU3RhdHVzGlMKBUlucHV0EhEKAmlkGAEgASgJQgXKPgIBAhI3CgZzdGF0dXMYAiABKA4yIS5ra19zY2hlZHVsZXIuVGFza0V4ZWN1dGlvblN0YXR1c0IEyj4BARoICgZPdXRwdXQiSAoNVGFza0FwcGVuZExvZxotCgVJbnB1dBIRCgJpZBgBIAEoCUIFyj4CAQISEQoDbG9nGAIgASgJQgTKPgEBGggKBk91dHB1dCJ1ChFUYXNrRXhlY3V0aW9uTGlzdBocCgVJbnB1dBITCgVqb2JJZBgBIAEoCUIEyj4BAhpCCgZPdXRwdXQSOAoRVGFza0V4ZWN1dGlvbkxpc3QYASADKAsyHS5ra19zY2hlZHVsZXIuUEJUYXNrRXhlY3V0aW9uIm4KEFRhc2tFeGVjdXRpb25HZXQaGgoFSW5wdXQSEQoCSWQYASABKAlCBco+AgECGj4KBk91dHB1dBI0Cg1UYXNrRXhlY3V0aW9uGAEgASgLMh0ua2tfc2NoZWR1bGVyLlBCVGFza0V4ZWN1dGlvbiI7ChNUYXNrRXhlY3V0aW9uRGVsZXRlGhoKBUlucHV0EhEKAklkGAEgASgJQgXKPgIBAhoICgZPdXRwdXQqxgEKE1Rhc2tFeGVjdXRpb25TdGF0dXMSJQohVEFTS19FWEVDVVRJT05fU1RBVFVTX1VOU1BFQ0lGSUVEEAASHgoaVEFTS19FWEVDVVRJT05fU1RBVFVTX0luaXQQARIhCh1UQVNLX0VYRUNVVElPTl9TVEFUVVNfUlVOTklORxACEiMKH1RBU0tfRVhFQ1VUSU9OX1NUQVRVU19DT01QTEVURUQQAxIgChxUQVNLX0VYRUNVVElPTl9TVEFUVVNfRkFJTEVEEARCD1oNL2trX3NjaGVkdWxlcmIIZWRpdGlvbnNw6Ac", [file_kk_scheduler_extend_field, file_google_protobuf_timestamp]);
+  fileDesc("CiBra19zY2hlZHVsZXIvVGFza0V4ZWN1dGlvbi5wcm90bxIMa2tfc2NoZWR1bGVyIssBCg9QQlRhc2tFeGVjdXRpb24SCgoCSWQYASABKAkSDQoFSm9iSWQYAiABKAkSMQoGU3RhdHVzGAMgASgOMiEua2tfc2NoZWR1bGVyLlRhc2tFeGVjdXRpb25TdGF0dXMSLQoJU3RhcnRlZEF0GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgpGaW5pc2hlZEF0GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBILCgNMb2cYBiABKAkiSAoKVGFza0NyZWF0ZRowCgVJbnB1dBIRCgJJZBgBIAEoCUIFyj4CAQISFAoFSm9iSWQYAiABKAlCBco+AgECGggKBk91dHB1dCJxChBUYXNrVXBkYXRlU3RhdHVzGlMKBUlucHV0EhEKAklkGAEgASgJQgXKPgIBAhI3CgZzdGF0dXMYAiABKA4yIS5ra19zY2hlZHVsZXIuVGFza0V4ZWN1dGlvblN0YXR1c0IEyj4BARoICgZPdXRwdXQiSAoNVGFza0FwcGVuZExvZxotCgVJbnB1dBIRCgJJZBgBIAEoCUIFyj4CAQISEQoDTG9nGAIgASgJQgTKPgEBGggKBk91dHB1dCJ1ChFUYXNrRXhlY3V0aW9uTGlzdBocCgVJbnB1dBITCgVKb2JJZBgBIAEoCUIEyj4BAhpCCgZPdXRwdXQSOAoRVGFza0V4ZWN1dGlvbkxpc3QYASADKAsyHS5ra19zY2hlZHVsZXIuUEJUYXNrRXhlY3V0aW9uIm4KEFRhc2tFeGVjdXRpb25HZXQaGgoFSW5wdXQSEQoCSWQYASABKAlCBco+AgECGj4KBk91dHB1dBI0Cg1UYXNrRXhlY3V0aW9uGAEgASgLMh0ua2tfc2NoZWR1bGVyLlBCVGFza0V4ZWN1dGlvbiI7ChNUYXNrRXhlY3V0aW9uRGVsZXRlGhoKBUlucHV0EhEKAklkGAEgASgJQgXKPgIBAhoICgZPdXRwdXQqxgEKE1Rhc2tFeGVjdXRpb25TdGF0dXMSJQohVEFTS19FWEVDVVRJT05fU1RBVFVTX1VOU1BFQ0lGSUVEEAASHgoaVEFTS19FWEVDVVRJT05fU1RBVFVTX0luaXQQARIhCh1UQVNLX0VYRUNVVElPTl9TVEFUVVNfUlVOTklORxACEiMKH1RBU0tfRVhFQ1VUSU9OX1NUQVRVU19DT01QTEVURUQQAxIgChxUQVNLX0VYRUNVVElPTl9TVEFUVVNfRkFJTEVEEARCD1oNL2trX3NjaGVkdWxlcmIIZWRpdGlvbnNw6Ac", [file_kk_scheduler_extend_field, file_google_protobuf_timestamp]);
 
 /**
  * @generated from message kk_scheduler.PBTaskExecution
@@ -75,14 +75,14 @@ export const TaskCreateSchema: GenMessage<TaskCreate> = /*@__PURE__*/
  */
 export type TaskCreate_Input = Message<"kk_scheduler.TaskCreate.Input"> & {
   /**
-   * @generated from field: string id = 1;
+   * @generated from field: string Id = 1;
    */
-  id: string;
+  Id: string;
 
   /**
-   * @generated from field: string jobId = 2;
+   * @generated from field: string JobId = 2;
    */
-  jobId: string;
+  JobId: string;
 };
 
 /**
@@ -123,9 +123,9 @@ export const TaskUpdateStatusSchema: GenMessage<TaskUpdateStatus> = /*@__PURE__*
  */
 export type TaskUpdateStatus_Input = Message<"kk_scheduler.TaskUpdateStatus.Input"> & {
   /**
-   * @generated from field: string id = 1;
+   * @generated from field: string Id = 1;
    */
-  id: string;
+  Id: string;
 
   /**
    * @generated from field: kk_scheduler.TaskExecutionStatus status = 2;
@@ -171,14 +171,14 @@ export const TaskAppendLogSchema: GenMessage<TaskAppendLog> = /*@__PURE__*/
  */
 export type TaskAppendLog_Input = Message<"kk_scheduler.TaskAppendLog.Input"> & {
   /**
-   * @generated from field: string id = 1;
+   * @generated from field: string Id = 1;
    */
-  id: string;
+  Id: string;
 
   /**
-   * @generated from field: string log = 2;
+   * @generated from field: string Log = 2;
    */
-  log: string;
+  Log: string;
 };
 
 /**
@@ -219,9 +219,9 @@ export const TaskExecutionListSchema: GenMessage<TaskExecutionList> = /*@__PURE_
  */
 export type TaskExecutionList_Input = Message<"kk_scheduler.TaskExecutionList.Input"> & {
   /**
-   * @generated from field: string jobId = 1;
+   * @generated from field: string JobId = 1;
    */
-  jobId: string;
+  JobId: string;
 };
 
 /**

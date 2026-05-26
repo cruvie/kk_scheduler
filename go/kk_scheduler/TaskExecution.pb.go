@@ -557,8 +557,8 @@ func (b0 TaskExecutionDelete_builder) Build() *TaskExecutionDelete {
 
 type TaskCreate_Input struct {
 	state                  protoimpl.MessageState `protogen:"opaque.v1"`
-	xxx_hidden_Id          *string                `protobuf:"bytes,1,opt,name=id"`
-	xxx_hidden_JobId       *string                `protobuf:"bytes,2,opt,name=jobId"`
+	xxx_hidden_Id          *string                `protobuf:"bytes,1,opt,name=Id"`
+	xxx_hidden_JobId       *string                `protobuf:"bytes,2,opt,name=JobId"`
 	XXX_raceDetectHookData protoimpl.RaceDetectHookData
 	XXX_presence           [1]uint32
 	unknownFields          protoimpl.UnknownFields
@@ -711,7 +711,7 @@ func (b0 TaskCreate_Output_builder) Build() *TaskCreate_Output {
 
 type TaskUpdateStatus_Input struct {
 	state                  protoimpl.MessageState `protogen:"opaque.v1"`
-	xxx_hidden_Id          *string                `protobuf:"bytes,1,opt,name=id"`
+	xxx_hidden_Id          *string                `protobuf:"bytes,1,opt,name=Id"`
 	xxx_hidden_Status      TaskExecutionStatus    `protobuf:"varint,2,opt,name=status,enum=kk_scheduler.TaskExecutionStatus"`
 	XXX_raceDetectHookData protoimpl.RaceDetectHookData
 	XXX_presence           [1]uint32
@@ -864,8 +864,8 @@ func (b0 TaskUpdateStatus_Output_builder) Build() *TaskUpdateStatus_Output {
 
 type TaskAppendLog_Input struct {
 	state                  protoimpl.MessageState `protogen:"opaque.v1"`
-	xxx_hidden_Id          *string                `protobuf:"bytes,1,opt,name=id"`
-	xxx_hidden_Log         *string                `protobuf:"bytes,2,opt,name=log"`
+	xxx_hidden_Id          *string                `protobuf:"bytes,1,opt,name=Id"`
+	xxx_hidden_Log         *string                `protobuf:"bytes,2,opt,name=Log"`
 	XXX_raceDetectHookData protoimpl.RaceDetectHookData
 	XXX_presence           [1]uint32
 	unknownFields          protoimpl.UnknownFields
@@ -1018,7 +1018,7 @@ func (b0 TaskAppendLog_Output_builder) Build() *TaskAppendLog_Output {
 
 type TaskExecutionList_Input struct {
 	state                  protoimpl.MessageState `protogen:"opaque.v1"`
-	xxx_hidden_JobId       *string                `protobuf:"bytes,1,opt,name=jobId"`
+	xxx_hidden_JobId       *string                `protobuf:"bytes,1,opt,name=JobId"`
 	XXX_raceDetectHookData protoimpl.RaceDetectHookData
 	XXX_presence           [1]uint32
 	unknownFields          protoimpl.UnknownFields
@@ -1437,22 +1437,22 @@ const file_kk_scheduler_TaskExecution_proto_rawDesc = "" +
 	"\n" +
 	"TaskCreate\x1a;\n" +
 	"\x05Input\x12\x15\n" +
-	"\x02id\x18\x01 \x01(\tB\x05\xca>\x02\x01\x02R\x02id\x12\x1b\n" +
-	"\x05jobId\x18\x02 \x01(\tB\x05\xca>\x02\x01\x02R\x05jobId\x1a\b\n" +
+	"\x02Id\x18\x01 \x01(\tB\x05\xca>\x02\x01\x02R\x02Id\x12\x1b\n" +
+	"\x05JobId\x18\x02 \x01(\tB\x05\xca>\x02\x01\x02R\x05JobId\x1a\b\n" +
 	"\x06Output\"}\n" +
 	"\x10TaskUpdateStatus\x1a_\n" +
 	"\x05Input\x12\x15\n" +
-	"\x02id\x18\x01 \x01(\tB\x05\xca>\x02\x01\x02R\x02id\x12?\n" +
+	"\x02Id\x18\x01 \x01(\tB\x05\xca>\x02\x01\x02R\x02Id\x12?\n" +
 	"\x06status\x18\x02 \x01(\x0e2!.kk_scheduler.TaskExecutionStatusB\x04\xca>\x01\x01R\x06status\x1a\b\n" +
 	"\x06Output\"Q\n" +
 	"\rTaskAppendLog\x1a6\n" +
 	"\x05Input\x12\x15\n" +
-	"\x02id\x18\x01 \x01(\tB\x05\xca>\x02\x01\x02R\x02id\x12\x16\n" +
-	"\x03log\x18\x02 \x01(\tB\x04\xca>\x01\x01R\x03log\x1a\b\n" +
+	"\x02Id\x18\x01 \x01(\tB\x05\xca>\x02\x01\x02R\x02Id\x12\x16\n" +
+	"\x03Log\x18\x02 \x01(\tB\x04\xca>\x01\x01R\x03Log\x1a\b\n" +
 	"\x06Output\"\x8f\x01\n" +
 	"\x11TaskExecutionList\x1a#\n" +
 	"\x05Input\x12\x1a\n" +
-	"\x05jobId\x18\x01 \x01(\tB\x04\xca>\x01\x02R\x05jobId\x1aU\n" +
+	"\x05JobId\x18\x01 \x01(\tB\x04\xca>\x01\x02R\x05JobId\x1aU\n" +
 	"\x06Output\x12K\n" +
 	"\x11TaskExecutionList\x18\x01 \x03(\v2\x1d.kk_scheduler.PBTaskExecutionR\x11TaskExecutionList\"\x81\x01\n" +
 	"\x10TaskExecutionGet\x1a\x1e\n" +

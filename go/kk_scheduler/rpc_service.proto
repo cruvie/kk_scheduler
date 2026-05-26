@@ -40,7 +40,7 @@ service KKScheduleTrigger {
 message Trigger {
   message Input {
     string funcName = 1;
-    string jobId = 2[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
+    string JobId = 2[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
   }
   message Output {
   }

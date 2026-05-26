@@ -25,15 +25,15 @@ message PBTaskExecution {
 
 message TaskCreate {
   message Input {
-    string id = 1[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
-    string jobId = 2[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
+    string Id = 1[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
+    string JobId = 2[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
   }
   message Output {}
 }
 
 message TaskUpdateStatus {
   message Input {
-    string id = 1[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
+    string Id = 1[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
     TaskExecutionStatus status = 2[(field_behavior) = REQUIRED];
   }
   message Output {}
@@ -41,15 +41,15 @@ message TaskUpdateStatus {
 
 message TaskAppendLog {
   message Input {
-    string id = 1[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
-    string log = 2[(field_behavior) = REQUIRED];
+    string Id = 1[(field_behavior) = REQUIRED, (field_behavior) = UUID7];
+    string Log = 2[(field_behavior) = REQUIRED];
   }
   message Output {}
 }
 
 message TaskExecutionList {
   message Input {
-    string jobId = 1[(field_behavior) = UUID7];
+    string JobId = 1[(field_behavior) = UUID7];
   }
   message Output {
     repeated PBTaskExecution TaskExecutionList = 1;
