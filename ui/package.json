@@ -10,12 +10,14 @@
     "postinstall": "nuxt prepare",
     "npm install": " npm install --force",
     "install check-updates": "npm install -g npm-check-updates",
+    "dep-kk_kit": "npm install git+https://gitee.com/cruvie/kk_kit.git",
     "check-updates": "npm-check-updates",
     "update package.json deps": "ncu -u",
     "cache clean": " npm cache clear --force",
-    "skill":"npx skills add nuxt/ui --global"
+    "skill": "npx skills add nuxt/ui --global"
   },
   "dependencies": {
+    "kk_kit": "git+https://gitee.com/cruvie/kk_kit.git#main",
     "nuxt": "^4.4.6",
     "vue": "^3.5.34",
     "vue-router": "^5.0.7"

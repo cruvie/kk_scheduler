@@ -1,4 +1,5 @@
 import type {Interceptor} from "@connectrpc/connect";
+import {GenRandomStr} from "kk_kit/multi_lang/kk_id";
 
 
 export const authInterceptor: Interceptor = (next) => async (req) => {
@@ -8,7 +9,7 @@ export const authInterceptor: Interceptor = (next) => async (req) => {
         req.header.set("JwtAuthKey", token);
     }
 
-    const traceId = getTraceId();
+    const traceId = GenRandomStr(10);
     if (traceId) {
         req.header.set("TraceId", traceId);
     }
@@ -24,28 +25,4 @@ function getToken(): string | null {
     } catch (e) {
         return null;
     }
-}
-
-
-function getTraceId(): string | null {
-    return "2142141"
-
-    try {
-        let traceId = localStorage.getItem("trace_id")??"";
-        if (!traceId) {
-            traceId = generateTraceId();
-            localStorage.setItem("trace_id", traceId);
-        }
-        return traceId;
-    } catch (e) {
-        return null;
-    }
-}
-
-function generateTraceId(): string {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-        const r = Math.random() * 16 | 0;
-        const v = c == 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
-    });
 }
