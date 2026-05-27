@@ -4,8 +4,8 @@ import (
 	"context"
 	"net"
 
-	"gitee.com/cruvie/kk_go_kit/kk_ctx"
-	"gitee.com/cruvie/kk_go_kit/kk_grpc"
+	"gitee.com/cruvie/kk_kit/go/kk_ctx"
+	"gitee.com/cruvie/kk_kit/go/kk_grpc"
 	"github.com/cruvie/kk-scheduler/go/internal/common_go"
 	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
 	middleware "github.com/grpc-ecosystem/go-grpc-middleware/v2"

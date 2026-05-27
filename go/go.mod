@@ -17,7 +17,7 @@ tool (
 )
 
 require (
-	gitee.com/cruvie/kk_go_kit v0.1.4
+	gitee.com/cruvie/kk_kit v0.1.5-0.20260527095935-1bb748e619b3
 	github.com/BurntSushi/toml v1.6.0
 	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.3.3
 	github.com/improbable-eng/grpc-web v0.15.0

@@ -1,7 +1,7 @@
 package task_execution
 
 import (
-	"gitee.com/cruvie/kk_go_kit/kk_grpc"
+	"gitee.com/cruvie/kk_kit/go/kk_grpc"
 	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
 )
 

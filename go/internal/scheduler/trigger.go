@@ -4,8 +4,8 @@ import (
 	"context"
 	"log/slog"
 
-	"gitee.com/cruvie/kk_go_kit/kk_grpc"
-	"gitee.com/cruvie/kk_go_kit/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/kk_grpc"
+	"gitee.com/cruvie/kk_kit/go/kk_stage"
 	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

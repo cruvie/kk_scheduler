@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"log/slog"
 
-	"gitee.com/cruvie/kk_go_kit/kk_id"
-	"gitee.com/cruvie/kk_go_kit/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/multi_lang/kk_id"
 	"github.com/samber/lo"
 )
 

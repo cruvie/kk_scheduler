@@ -17,8 +17,8 @@ dev.gaijin.team/go/golib v0.6.0/go.mod h1:uY1mShx8Z/aNHWDyAkZTkX+uCi5PdX7KsG1eDQ
 dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7gZCb22OMCxBHrMx7a5I7Hp++hsVxbQ4BYO7hU=
 filippo.io/edwards25519 v1.2.0 h1:crnVqOiS4jqYleHd9vaKZ+HKtHfllngJIiOpNpoJsjo=
 filippo.io/edwards25519 v1.2.0/go.mod h1:xzAOLCNug/yB62zG1bQ8uziwrIqIuxhctzJT18Q77mc=
-gitee.com/cruvie/kk_go_kit v0.1.4 h1:TF1OHxOxNhtOSC9iF1yLiBm5Rp63WsLfW7eUAVhYL9w=
-gitee.com/cruvie/kk_go_kit v0.1.4/go.mod h1:XPISH3sAudro+5Q8qY81HxIcYhXwKeTGRLGIRHFvUyY=
+gitee.com/cruvie/kk_kit v0.1.5-0.20260527095935-1bb748e619b3 h1:pP/uNSgpZjOjIaGh9j0ZznvByP71PZXcPb8VlL20/k0=
+gitee.com/cruvie/kk_kit v0.1.5-0.20260527095935-1bb748e619b3/go.mod h1:YdSgYSH/VrQ5rgoDyi7bXUlvD6THxjZ+WuViOPe6v98=
 github.com/4meepo/tagalign v1.4.3 h1:Bnu7jGWwbfpAie2vyl63Zup5KuRv21olsPIha53BJr8=
 github.com/4meepo/tagalign v1.4.3/go.mod h1:00WwRjiuSbrRJnSVeGWPLp2epS5Q/l4UEy0apLLS37c=
 github.com/Abirdcfly/dupword v0.1.7 h1:2j8sInznrje4I0CMisSL6ipEBkeJUJAmK1/lfoNGWrQ=

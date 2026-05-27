@@ -5,9 +5,9 @@ import (
 	"log/slog"
 	"os"
 
-	"gitee.com/cruvie/kk_go_kit/kk_env"
-	"gitee.com/cruvie/kk_go_kit/kk_pg"
-	"gitee.com/cruvie/kk_go_kit/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/kk_env"
+	"gitee.com/cruvie/kk_kit/go/kk_pg"
+	"gitee.com/cruvie/kk_kit/go/kk_stage"
 	"github.com/BurntSushi/toml"
 	"github.com/cruvie/kk-scheduler/go/internal/models"
 	"github.com/cruvie/kk-scheduler/go/internal/models/query"

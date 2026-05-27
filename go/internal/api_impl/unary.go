@@ -3,7 +3,7 @@ package api_impl
 import (
 	"context"
 
-	"gitee.com/cruvie/kk_go_kit/kk_grpc"
+	"gitee.com/cruvie/kk_kit/go/kk_grpc"
 	"github.com/cruvie/kk-scheduler/go/internal/api_handlers/job"
 	"github.com/cruvie/kk-scheduler/go/internal/api_handlers/service"
 	"github.com/cruvie/kk-scheduler/go/internal/api_handlers/task_execution"

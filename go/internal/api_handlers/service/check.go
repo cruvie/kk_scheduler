@@ -1,7 +1,7 @@
 package service
 
 import (
-	"gitee.com/cruvie/kk_go_kit/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/kk_stage"
 )
 
 func (x *ApiServiceDelete) CheckInput(stage *kk_stage.Stage) error {

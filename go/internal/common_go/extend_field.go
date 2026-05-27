@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"slices"
 
-	"gitee.com/cruvie/kk_go_kit/kk_id"
+	"gitee.com/cruvie/kk_kit/go/multi_lang/kk_id"
 	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
@@ -53,12 +53,12 @@ func CheckFields(msg proto.Message) (err error) {
 func checkUUID7(reflectMsg protoreflect.Message, field protoreflect.FieldDescriptor) (fieldNames []protoreflect.Name) {
 	if field.IsList() {
 		for index := range reflectMsg.Get(field).List().Len() {
-			if !(kk_id.ValidateUUID7(reflectMsg.Get(field).List().Get(index).String())) {
+			if !kk_id.ValidateUUID7(reflectMsg.Get(field).List().Get(index).String()) {
 				fieldNames = append(fieldNames, field.Name())
 			}
 		}
 	} else {
-		if !(kk_id.ValidateUUID7(reflectMsg.Get(field).String())) {
+		if !kk_id.ValidateUUID7(reflectMsg.Get(field).String()) {
 			fieldNames = append(fieldNames, field.Name())
 		}
 	}

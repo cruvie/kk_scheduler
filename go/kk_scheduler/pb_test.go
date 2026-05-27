@@ -3,7 +3,7 @@ package kk_scheduler
 import (
 	"testing"
 
-	"gitee.com/cruvie/kk_go_kit/kk_protobuf"
+	"gitee.com/cruvie/kk_kit/go/kk_protobuf"
 	"github.com/robfig/cron/v3"
 )
 

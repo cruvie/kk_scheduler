@@ -1,7 +1,7 @@
 package service
 
 import (
-	"gitee.com/cruvie/kk_go_kit/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/kk_stage"
 	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
 )
 

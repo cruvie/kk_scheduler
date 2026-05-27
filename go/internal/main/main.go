@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"gitee.com/cruvie/kk_go_kit/kk_server"
+	"gitee.com/cruvie/kk_kit/go/kk_server"
 	"github.com/cruvie/kk-scheduler/go/internal/g_config"
 	"github.com/cruvie/kk-scheduler/go/internal/scheduler"
 )

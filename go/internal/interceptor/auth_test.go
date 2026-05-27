@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"gitee.com/cruvie/kk_go_kit/kk_jwt"
+	"gitee.com/cruvie/kk_kit/go/kk_jwt"
 )
 
 func TestAuth(t *testing.T) {

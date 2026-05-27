@@ -1,6 +1,6 @@
 package kk_scheduler
 
-import "gitee.com/cruvie/kk_go_kit/kk_stage"
+import "gitee.com/cruvie/kk_kit/go/kk_stage"
 
 // TaskExecutorOption configures TaskExecutor
 type TaskExecutorOption func(*TaskExecutor)

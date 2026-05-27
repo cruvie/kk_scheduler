@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"runtime/debug"
 
-	"gitee.com/cruvie/kk_go_kit/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/kk_stage"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

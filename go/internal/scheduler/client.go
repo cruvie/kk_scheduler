@@ -5,8 +5,8 @@ import (
 	"slices"
 	"strings"
 
-	"gitee.com/cruvie/kk_go_kit/kk_id"
-	"gitee.com/cruvie/kk_go_kit/kk_time"
+	"gitee.com/cruvie/kk_kit/go/kk_time"
+	"gitee.com/cruvie/kk_kit/go/multi_lang/kk_id"
 	"github.com/cruvie/kk-scheduler/go/internal/store_driver"
 	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
 	"github.com/robfig/cron/v3"

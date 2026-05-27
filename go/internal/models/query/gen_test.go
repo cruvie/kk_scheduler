@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"gitee.com/cruvie/kk_go_kit/kk_env"
-	"gitee.com/cruvie/kk_go_kit/kk_pg"
-	"gitee.com/cruvie/kk_go_kit/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/kk_env"
+	"gitee.com/cruvie/kk_kit/go/kk_pg"
+	"gitee.com/cruvie/kk_kit/go/kk_stage"
 	"github.com/cruvie/kk-scheduler/go/internal/models"
 )
 
@@ -37,7 +37,8 @@ func TestGen(t *testing.T) {
 
 func TestCreateTable(t *testing.T) {
 	pg.Init(kk_stage.NewNoopStage())
-	kk_pg.CreateTables(kk_pg.GormClient,
+	kk_pg.CreateTables(
+		kk_pg.GormClient,
 		models.TaskExecution{},
 		models.Job{},
 		models.Service{},

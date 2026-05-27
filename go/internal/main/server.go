@@ -7,9 +7,9 @@ import (
 	"net"
 	"net/http"
 
-	"gitee.com/cruvie/kk_go_kit/kk_grpc"
-	"gitee.com/cruvie/kk_go_kit/kk_server"
-	"gitee.com/cruvie/kk_go_kit/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/kk_grpc"
+	"gitee.com/cruvie/kk_kit/go/kk_server"
+	"gitee.com/cruvie/kk_kit/go/kk_stage"
 	"github.com/cruvie/kk-scheduler/go/internal/api_impl"
 	"github.com/cruvie/kk-scheduler/go/internal/common_go"
 	"github.com/cruvie/kk-scheduler/go/internal/g_config"

@@ -13,7 +13,8 @@ var conn *grpc.ClientConn
 
 func getClient(t *testing.T) kk_scheduler.KKScheduleClient {
 	var err error
-	conn, err = grpc.NewClient("127.0.0.1:8666",
+	conn, err = grpc.NewClient(
+		"127.0.0.1:8666",
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 	)
 	if err != nil {

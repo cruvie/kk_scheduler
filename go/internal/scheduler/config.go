@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	"gitee.com/cruvie/kk_go_kit/kk_server"
+	"gitee.com/cruvie/kk_kit/go/kk_server"
 	"github.com/cruvie/kk-scheduler/go/internal/store_driver"
 	"github.com/robfig/cron/v3"
 )
@@ -27,7 +27,8 @@ func NewScheduleServer() *kk_server.KKRunServer {
 		}
 		logger := kKScheduleLog{}
 
-		cfg.Opts = append(cfg.Opts,
+		cfg.Opts = append(
+			cfg.Opts,
 			cron.WithChain(cron.Recover(logger)),
 			cron.WithLogger(logger),
 		)

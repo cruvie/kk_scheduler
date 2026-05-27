@@ -14,7 +14,8 @@ import (
 
 // getRealClient connects to the real gRPC scheduler server
 func getRealClient(t *testing.T) (kk_scheduler.KKScheduleClient, func()) {
-	conn, err := grpc.NewClient("127.0.0.1:8666",
+	conn, err := grpc.NewClient(
+		"127.0.0.1:8666",
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 	)
 	if err != nil {

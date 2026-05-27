@@ -3,8 +3,8 @@ package internal
 import (
 	"testing"
 
-	"gitee.com/cruvie/kk_go_kit/kk_grpc/grpc_api_gen"
-	"gitee.com/cruvie/kk_go_kit/kk_system"
+	"gitee.com/cruvie/kk_kit/go/kk_grpc/grpc_api_gen"
+	"gitee.com/cruvie/kk_kit/go/kk_system"
 	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
 )
 
@@ -68,5 +68,6 @@ func TestGenImpl(t *testing.T) {
 			Methods:         kk_scheduler.KKSchedule_ServiceDesc.Methods,
 			ApiDefPkgPath:   "github.com/cruvie/kk-scheduler/go/internal/api_def",
 			HandlersPkgPath: "github.com/cruvie/kk-scheduler/go/internal/api_handlers",
-		})
+		},
+	)
 }

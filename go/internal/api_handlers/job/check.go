@@ -1,7 +1,7 @@
 package job
 
 import (
-	"gitee.com/cruvie/kk_go_kit/kk_stage"
+	"gitee.com/cruvie/kk_kit/go/kk_stage"
 	"github.com/robfig/cron/v3"
 )
 
