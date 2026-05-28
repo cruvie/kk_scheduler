@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
+	"github.com/cruvie/kk_scheduler/go/kk_scheduler"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

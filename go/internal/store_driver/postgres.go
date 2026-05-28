@@ -8,9 +8,9 @@ import (
 	"gitee.com/cruvie/kk_kit/go/kk_protobuf"
 	"gitee.com/cruvie/kk_kit/go/kk_time"
 	"gitee.com/cruvie/kk_kit/go/multi_lang/kk_id"
-	"github.com/cruvie/kk-scheduler/go/internal/models"
-	"github.com/cruvie/kk-scheduler/go/internal/models/query"
-	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
+	"github.com/cruvie/kk_scheduler/go/internal/models"
+	"github.com/cruvie/kk_scheduler/go/internal/models/query"
+	"github.com/cruvie/kk_scheduler/go/kk_scheduler"
 	"gorm.io/gorm"
 )
 

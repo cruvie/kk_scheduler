@@ -7,8 +7,8 @@ import (
 
 	"gitee.com/cruvie/kk_kit/go/kk_time"
 	"gitee.com/cruvie/kk_kit/go/multi_lang/kk_id"
-	"github.com/cruvie/kk-scheduler/go/internal/store_driver"
-	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
+	"github.com/cruvie/kk_scheduler/go/internal/store_driver"
+	"github.com/cruvie/kk_scheduler/go/kk_scheduler"
 	"github.com/robfig/cron/v3"
 	"github.com/samber/lo"
 	"google.golang.org/protobuf/types/known/timestamppb"

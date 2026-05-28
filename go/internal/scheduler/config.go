@@ -5,7 +5,7 @@ import (
 	"log/slog"
 
 	"gitee.com/cruvie/kk_kit/go/kk_server"
-	"github.com/cruvie/kk-scheduler/go/internal/store_driver"
+	"github.com/cruvie/kk_scheduler/go/internal/store_driver"
 	"github.com/robfig/cron/v3"
 )
 

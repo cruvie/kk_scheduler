@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
+	"github.com/cruvie/kk_scheduler/go/kk_scheduler"
 )
 
 type Job struct {

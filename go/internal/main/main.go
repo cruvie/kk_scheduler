@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"gitee.com/cruvie/kk_kit/go/kk_server"
-	"github.com/cruvie/kk-scheduler/go/internal/g_config"
-	"github.com/cruvie/kk-scheduler/go/internal/scheduler"
+	"github.com/cruvie/kk_scheduler/go/internal/g_config"
+	"github.com/cruvie/kk_scheduler/go/internal/scheduler"
 )
 
 func main() {
@@ -13,9 +13,9 @@ func main() {
 	defer g_config.CloseConfig()
 
 	kkServer := kk_server.NewKKServer(10*time.Second, stage)
-	kkServer.Add("kk-scheduler", 0, scheduler.NewScheduleServer())
-	kkServer.Add("kk-scheduler-grpc", 0, NewGrpcServer(stage))
-	kkServer.Add("kk-scheduler-http", 0, NewHttpServer(stage))
-	kkServer.Add("kk-scheduler-web", 0, NewWebServer(stage))
+	kkServer.Add("kk_scheduler", 0, scheduler.NewScheduleServer())
+	kkServer.Add("kk_scheduler-grpc", 0, NewGrpcServer(stage))
+	kkServer.Add("kk_scheduler-http", 0, NewHttpServer(stage))
+	kkServer.Add("kk_scheduler-web", 0, NewWebServer(stage))
 	kkServer.ServeAndWait()
 }

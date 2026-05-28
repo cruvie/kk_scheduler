@@ -4,11 +4,11 @@
       <UCard class="box-card">
         <template #header>
           <div class="card-header">
-            <h1>Welcome to kk-scheduler</h1>
+            <h1>Welcome to kk_scheduler</h1>
           </div>
         </template>
         <p>
-          This is a frontend interface for kk-scheduler.
+          This is a frontend interface for kk_scheduler.
         </p>
         <p>
           You can manage your tasks and schedules here.
@@ -17,7 +17,7 @@
           <UButton 
             variant="link" 
             color="primary" 
-            to="https://github.com/cruvie/kk-scheduler"
+            to="https://github.com/cruvie/kk_scheduler"
             target="_blank"
           >
             Visit GitHub Repository

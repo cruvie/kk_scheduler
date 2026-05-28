@@ -9,8 +9,8 @@ import (
 	"gitee.com/cruvie/kk_kit/go/kk_pg"
 	"gitee.com/cruvie/kk_kit/go/kk_stage"
 	"github.com/BurntSushi/toml"
-	"github.com/cruvie/kk-scheduler/go/internal/models"
-	"github.com/cruvie/kk-scheduler/go/internal/models/query"
+	"github.com/cruvie/kk_scheduler/go/internal/models"
+	"github.com/cruvie/kk_scheduler/go/internal/models/query"
 )
 
 func init() {
@@ -43,10 +43,10 @@ func InitConfig() *kk_stage.Stage {
 		panic(err)
 	}
 
-	stage := kk_stage.NewStage(context.Background(), "kk-scheduler")
+	stage := kk_stage.NewStage(context.Background(), "kk_scheduler")
 	{
 		Config.ConfigSlog = &kk_stage.ConfigLog{
-			Lumberjack: kk_stage.DefaultLogConfig("kk-scheduler"),
+			Lumberjack: kk_stage.DefaultLogConfig("kk_scheduler"),
 			Format:     kk_stage.FormatJSON,
 		}
 		Config.ConfigSlog.Init()

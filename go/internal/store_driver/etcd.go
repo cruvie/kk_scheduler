@@ -6,8 +6,8 @@ package store_driver
 //	"fmt"
 //	"time"
 //
-//	"github.com/cruvie/kk-scheduler/go/internal/g_config"
-//	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
+//	"github.com/cruvie/kk_scheduler/go/internal/g_config"
+//	"github.com/cruvie/kk_scheduler/go/kk_scheduler"
 //	clientv3 "go.etcd.io/etcd/client/v3"
 //	"google.golang.org/protobuf/encoding/protojson"
 //)
@@ -20,8 +20,8 @@ package store_driver
 //
 //*/
 //const (
-//	storeServiceKey = "kk-scheduler-service"
-//	storeJobKey     = "kk-scheduler-job"
+//	storeServiceKey = "kk_scheduler-service"
+//	storeJobKey     = "kk_scheduler-job"
 //)
 //
 //type StoreEtcd struct {

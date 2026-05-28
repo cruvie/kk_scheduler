@@ -6,8 +6,8 @@ import (
 
 	"gitee.com/cruvie/kk_kit/go/kk_ctx"
 	"gitee.com/cruvie/kk_kit/go/kk_grpc"
-	"github.com/cruvie/kk-scheduler/go/internal/common_go"
-	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
+	"github.com/cruvie/kk_scheduler/go/internal/common_go"
+	"github.com/cruvie/kk_scheduler/go/kk_scheduler"
 	middleware "github.com/grpc-ecosystem/go-grpc-middleware/v2"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

@@ -1,8 +1,8 @@
-name: kk-scheduler
+name: kk_scheduler
 services:
-  kk-scheduler:
-    image: cruvie/kk-scheduler:latest
-    container_name: kk-scheduler
+  kk_scheduler:
+    image: cruvie/kk_scheduler:latest
+    container_name: kk_scheduler
     restart: unless-stopped
     environment:
       KK_Schedule: "prod"
@@ -13,10 +13,10 @@ services:
       - "8667:8667"
       - "8668:8668"
     volumes:
-      - ./config.toml:/kk-scheduler/config.toml
-      - ./logs:/kk-scheduler/logs
+      - ./config.toml:/kk_scheduler/config.toml
+      - ./logs:/kk_scheduler/logs
     networks:
-      - kk-scheduler
+      - kk_scheduler
 
   test-postgres:
     image: postgres:latest
@@ -30,8 +30,8 @@ services:
     volumes:
       - ./postgres/data:/var/lib/postgresql
     networks:
-      - kk-scheduler
+      - kk_scheduler
 
 networks:
-  kk-scheduler:
+  kk_scheduler:
     external: true

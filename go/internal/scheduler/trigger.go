@@ -6,7 +6,7 @@ import (
 
 	"gitee.com/cruvie/kk_kit/go/kk_grpc"
 	"gitee.com/cruvie/kk_kit/go/kk_stage"
-	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
+	"github.com/cruvie/kk_scheduler/go/kk_scheduler"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
@@ -37,7 +37,7 @@ func triggerFunc(service *kk_scheduler.PBRegisterService, pbJob *kk_scheduler.PB
 				slog.Error(err.Error())
 			}
 		}()
-		stage := kk_stage.NewStage(context.Background(), "kk-scheduler")
+		stage := kk_stage.NewStage(context.Background(), "kk_scheduler")
 		ctx, cancelFunc := kk_grpc.NewCallGrpcCtx(stage)
 		defer cancelFunc()
 

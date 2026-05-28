@@ -7,7 +7,7 @@ import (
 	"gitee.com/cruvie/kk_kit/go/kk_env"
 	"gitee.com/cruvie/kk_kit/go/kk_pg"
 	"gitee.com/cruvie/kk_kit/go/kk_stage"
-	"github.com/cruvie/kk-scheduler/go/internal/models"
+	"github.com/cruvie/kk_scheduler/go/internal/models"
 )
 
 func init() {

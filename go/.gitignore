@@ -2,6 +2,6 @@
 .fleet
 .vscode
 **/.DS_Store
-kk-scheduler.iml
+kk_scheduler.iml
 **/logs/
 vendor

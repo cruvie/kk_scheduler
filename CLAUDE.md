@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-kk-scheduler is a job scheduling system that uses cron and gRPC. Users register services (gRPC servers implementing `KKScheduleTriggerServer`), add jobs with cron specs, and the scheduler triggers jobs at their scheduled times via gRPC calls. It also provides a Web UI for managing services, jobs, task executions, and logs.
+kk_scheduler is a job scheduling system that uses cron and gRPC. Users register services (gRPC servers implementing `KKScheduleTriggerServer`), add jobs with cron specs, and the scheduler triggers jobs at their scheduled times via gRPC calls. It also provides a Web UI for managing services, jobs, task executions, and logs.
 
 ## Repository Layout
 
-- `go/` — Go backend (module `github.com/cruvie/kk-scheduler/go`)
+- `go/` — Go backend (module `github.com/cruvie/kk_scheduler/go`)
 - `ui/` — Nuxt 4 frontend (SPA, SSR disabled)
 - `deploy-docker/` — Docker deployment files
 
@@ -83,10 +83,10 @@ The UI is an SPA (`ssr: false`) using Nuxt 4, Vue 3, and **Nuxt UI v4** (`@nuxt/
 ### Server Startup
 
 `main.go` starts 4 services via `kk_server.KKServer`:
-1. **kk-scheduler** — cron scheduler (`scheduler.NewScheduleServer()`)
-2. **kk-scheduler-grpc** — gRPC server on `GrpcPort` (default 8666)
-3. **kk-scheduler-http** — gRPC-Web HTTP server on `HttpPort` (default 8667), wraps the gRPC server via `grpcweb.WrapServer`
-4. **kk-scheduler-web** — static file server on `WebPort` (default 8668), serves `go/public/` (the built UI)
+1. **kk_scheduler** — cron scheduler (`scheduler.NewScheduleServer()`)
+2. **kk_scheduler-grpc** — gRPC server on `GrpcPort` (default 8666)
+3. **kk_scheduler-http** — gRPC-Web HTTP server on `HttpPort` (default 8667), wraps the gRPC server via `grpcweb.WrapServer`
+4. **kk_scheduler-web** — static file server on `WebPort` (default 8668), serves `go/public/` (the built UI)
 
 ### gRPC Request Flow
 

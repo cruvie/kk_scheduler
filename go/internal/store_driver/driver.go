@@ -1,8 +1,8 @@
 package store_driver
 
 import (
-	"github.com/cruvie/kk-scheduler/go/internal/g_config"
-	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
+	"github.com/cruvie/kk_scheduler/go/internal/g_config"
+	"github.com/cruvie/kk_scheduler/go/kk_scheduler"
 )
 
 type StoreDriver interface {

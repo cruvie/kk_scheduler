@@ -1,5 +1,5 @@
 {
-  "name": "kk-scheduler",
+  "name": "kk_scheduler",
   "type": "module",
   "private": true,
   "scripts": {

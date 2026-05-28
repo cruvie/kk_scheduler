@@ -17,7 +17,7 @@ import (
 
 	"gorm.io/plugin/dbresolver"
 
-	"github.com/cruvie/kk-scheduler/go/internal/models"
+	"github.com/cruvie/kk_scheduler/go/internal/models"
 )
 
 func newService(db *gorm.DB, opts ...gen.DOOption) service {

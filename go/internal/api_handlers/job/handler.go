@@ -2,7 +2,7 @@ package job
 
 import (
 	"gitee.com/cruvie/kk_kit/go/kk_stage"
-	"github.com/cruvie/kk-scheduler/go/kk_scheduler"
+	"github.com/cruvie/kk_scheduler/go/kk_scheduler"
 )
 
 func (x *ApiJobDelete) Handler(stage *kk_stage.Stage) (*kk_scheduler.JobDelete_Output, error) {
