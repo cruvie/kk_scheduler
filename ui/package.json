@@ -17,7 +17,7 @@
     "skill": "npx skills add nuxt/ui --global"
   },
   "dependencies": {
-    "kk_kit": "git+https://gitee.com/cruvie/kk_kit.git#main",
+    "kk_kit": "git+https://gitee.com/cruvie/kk_kit.git",
     "nuxt": "^4.4.6",
     "vue": "^3.5.34",
     "vue-router": "^5.0.7"

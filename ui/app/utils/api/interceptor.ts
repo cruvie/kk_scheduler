@@ -1,5 +1,5 @@
 import type {Interceptor} from "@connectrpc/connect";
-import {GenRandomStr} from "kk_kit/multi_lang/kk_id";
+import {GenRandomStr} from "kk_kit/web/multi_lang/kk_id/kk_id";
 
 
 export const authInterceptor: Interceptor = (next) => async (req) => {
