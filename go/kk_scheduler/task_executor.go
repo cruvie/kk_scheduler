@@ -21,10 +21,10 @@ type StepCtl struct {
 func (c *StepCtl) Log(errOr error, msgOr string) {
 	if errOr != nil {
 		c.reportLog(errOr, msgOr)
-		slog.Error("TaskMsg", kk_stage.NewLog(c.stage).Error(errOr).Args()...)
+		c.stage.Log().Err(errOr).Error("TaskMsg")
 	} else {
 		c.reportLog(nil, msgOr)
-		slog.Info("TaskMsg", kk_stage.NewLog(c.stage).String("msg", msgOr).Args()...)
+		c.stage.Log().String("msg", msgOr).Info("TaskMsg")
 	}
 }
 

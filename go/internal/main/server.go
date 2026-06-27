@@ -25,7 +25,7 @@ func getGrpcServer(stage *kk_stage.Stage) *grpc.Server {
 		grpc.StatsHandler(otelgrpc.NewServerHandler()),
 
 		grpc.ChainUnaryInterceptor(
-			interceptor.UnaryInit(kk_grpc.GFileDescHub),
+			interceptor.UnaryInit(),
 			interceptor.UnaryLogging(g_config.Config.ConfigSlog),
 			recovery.UnaryServerInterceptor(recovery.WithRecoveryHandler(interceptor.PanicRecovery)),
 		),

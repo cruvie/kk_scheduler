@@ -3,6 +3,7 @@ package interceptor
 import (
 	"context"
 	"net"
+	"strings"
 
 	"gitee.com/cruvie/kk_kit/go/kk_ctx"
 	"gitee.com/cruvie/kk_kit/go/kk_grpc"
@@ -13,6 +14,8 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/peer"
 	"google.golang.org/grpc/status"
+	"google.golang.org/protobuf/reflect/protoreflect"
+	"google.golang.org/protobuf/reflect/protoregistry"
 )
 
 // contextKey 是未导出的类型，用于防止 key 冲突
@@ -21,9 +24,9 @@ type contextKey string
 // UnaryInit 第一个中间件，用于
 // 记录请求所涉及的全部拦截器类型
 // 记录客户端ip
-func UnaryInit(fileDescHub *kk_grpc.FileDescHub) grpc.UnaryServerInterceptor {
+func UnaryInit() grpc.UnaryServerInterceptor {
 	return func(ctx context.Context, req any, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (any, error) {
-		newCtx, err := getNewCtx(ctx, info.FullMethod, fileDescHub)
+		newCtx, err := getNewCtx(ctx, info.FullMethod)
 		if err != nil {
 			return nil, err
 		}
@@ -31,9 +34,9 @@ func UnaryInit(fileDescHub *kk_grpc.FileDescHub) grpc.UnaryServerInterceptor {
 	}
 }
 
-func StreamInit(fileDescHub *kk_grpc.FileDescHub) grpc.StreamServerInterceptor {
+func StreamInit() grpc.StreamServerInterceptor {
 	return func(srv any, stream grpc.ServerStream, info *grpc.StreamServerInfo, handler grpc.StreamHandler) error {
-		newCtx, err := getNewCtx(stream.Context(), info.FullMethod, fileDescHub)
+		newCtx, err := getNewCtx(stream.Context(), info.FullMethod)
 		if err != nil {
 			return err
 		}
@@ -43,9 +46,9 @@ func StreamInit(fileDescHub *kk_grpc.FileDescHub) grpc.StreamServerInterceptor {
 	}
 }
 
-func getNewCtx(ctx context.Context, fullMethod string, fileDescHub *kk_grpc.FileDescHub) (context.Context, error) {
+func getNewCtx(ctx context.Context, fullMethod string) (context.Context, error) {
 	{
-		methodDesc := fileDescHub.GetMethodDescriptor(fullMethod)
+		methodDesc := findMethodDescriptor(fullMethod)
 		if methodDesc == nil {
 			return nil, status.Error(codes.Unavailable, "kk_grpc method not found")
 		}
@@ -66,6 +69,19 @@ func getNewCtx(ctx context.Context, fullMethod string, fileDescHub *kk_grpc.File
 	}
 
 	return ctx, nil
+}
+
+// findMethodDescriptor 通过 protoregistry.GlobalFiles 查找方法描述符，O(1) 哈希查找。
+func findMethodDescriptor(fullMethod string) protoreflect.MethodDescriptor {
+	// "/package.Service/Method" → "package.Service.Method"
+	name := strings.TrimPrefix(fullMethod, "/")
+	name = strings.ReplaceAll(name, "/", ".")
+	desc, err := protoregistry.GlobalFiles.FindDescriptorByName(protoreflect.FullName(name))
+	if err != nil {
+		return nil
+	}
+	methodDesc, _ := desc.(protoreflect.MethodDescriptor)
+	return methodDesc
 }
 
 const (

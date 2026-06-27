@@ -6,7 +6,7 @@ import (
 )
 
 func InitDB(stage *kk_stage.Stage, pg *kk_pg.Config) {
-	kk_pg.CreateDB(pg, pg.DSN.DBName)
+	kk_pg.CreateDB(pg, pg.Source.DBName)
 	kk_pg.CreateTables(
 		pg.NewDefaultDB(stage),
 		TaskExecution{},
